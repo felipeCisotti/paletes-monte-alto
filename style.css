@@ -310,5 +310,12 @@ input[type="reset"]:hover {
   }
 
 .loc{
-    border-radius: 20px;
+    width: 600px;
+}
+
+.cont{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
 }
