@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paletes Monte Alto</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" crossorigin="anonymous"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="imagens/paletes logo de cima.png" class="logoTipo" alt="">
+        <nav class="menu">
+            <ul>
+                <li><a href="#carouselExampleIndicators">Início</a></li>
+                <li><a href="#empresa">Empresa</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#formulario">Cadastro</a></li>
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+   
+
+    </section>
+
+    <section id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/PALETES.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/paletes faxada.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/caminhão.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <section id="empresa" class="container my-5">
+      <div class="row">
+        <!-- Coluna da Empresa -->
+        <div class="col-md-6 mb-4">
+          <h2 class="text-center">Paletes Monte Alto LTDA</h2>
+          <p class="text-center">
+            A indústria Paletes Monte Alto Ltda é uma empresa especializada na fabricação de Paletes e Embalagens de Madeira,
+            fornecendo aos seus clientes produtos de alta qualidade e durabilidade.
+          </p>
+          <img src="imagens/pma.jpeg" class="img-fluid rounded d-block mx-auto" alt="Imagem da empresa">
+        </div>
+    
+        <!-- Coluna dos Serviços -->
+        <div class="col-md-6 mb-4">
+          <h2 class="text-center">Serviços</h2>
+          <p class="text-center">
+            A Paletes Monte Alto Ltda trabalha com vários tipos de paletes, como retornáveis e descartáveis, de acordo com a necessidade de nossos clientes.
+            Atuamos desde a fabricação, passando pela reforma até a comercialização desse tão necessário produto logístico.
+            Fornecemos madeiras serradas de Pinus e Eucalipto em diversas medidas.
+            Nossa equipe está preparada para lhe atender da melhor forma.
+          </p>
+          <img src="imagens/caminhoes.JPG" class="img-fluid rounded d-block mx-auto" alt="Imagem dos serviços">
+        </div>
+      </div>
+    </section>
+    
+
+      <div class="produto">
+        <div class="cartao cartao1">
+            <h1>Caixa fechada</h1>
+            <img src="imagens/caixa pequena.png" alt="t" class="produto">
+            <button>Comprar</button>
+        </div>
+
+        <div class="cartao cartao2">
+            <h1>Caixa com Divisoria</h1>
+            <img src="imagens/caixa divisoria.png" alt="caixa" class="produto">
+            <button>Comprar</button>
+        </div>
+        <div class="cartao cartao3">
+            <h1>Caixa Sob Medida</h1>
+            <img src="imagens/caixa grande.png" alt="caixa" class="produto">
+            <button>Comprar</button>
+        </div>
+       
+        </div>
+    </div>
+
+  <script>
+        // Inicializa a função Vanilla Tilt
+        VanillaTilt.init(document.querySelectorAll(".cartao"),{
+            max:25, // ângulo máximo de inclinação
+            speed: 400, //velocidade da animação
+            glare: true, //ativa brilho reflexivo
+            "max-glare":0.5, //intensidade do brilho (0 a 1)
+
+        });
+</script>
+
+<section id="localizacao" class="local">
+  <h2 class="text-center">Localização</h2>
+  <p class="text-center">Rodovia SP 305 KM 15,5 - Monte Alto / SP</p>
+  <img src="imagens/localizacao.png" class="localiza" alt="">
+</section>
+ 
+
+    <section id="formulario" class="secao">
+        <h2 class="text-center mb-4">Cadastro</h2>
+        <form>
+            <fieldset>
+              <div class="mb-3">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+              </div>
+          
+              <div class="mb-3">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+          
+              <div class="mb-3">
+                <label for="estado">Estados</label>
+                <select id="estado" name="estado">
+                  <option>Selecione um estado</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="MG">Minas Gerais</option>
+                  <!-- adicione mais opções conforme necessário -->
+                </select>
+              </div>
+          
+              <div class="mb-3">
+                <label for="data">Data de Nascimento</label>
+                <input type="date" id="data" name="data">
+              </div>
+          
+              <div class="d-flex gap-2">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+              </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="contato" class="bg-light py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <h2 class="text-center mb-4">Fale concosco</h2>
+              <form class="form-estilo">
+                <div class="mb-3">
+                  <label for="nome">Nome:</label>
+                  <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                </div>
+                <div class="d-flex gap-2">
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Cancelar">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5" class="rodape">
+      <div class="container">
+        <div class="row">
+          
+          <!-- Informações da empresa -->
+          <div class="col-md-4 mb-3">
+            <h5>Paletes Monte Alto LTDA</h5>
+            <p>Rodovia SP 305 KM 15,5<br>Monte Alto / SP</p>
+            <p>CNPJ: 00.000.000/0001-00</p>
+          </div>
+    
+          <!-- Links úteis -->
+          <div class="col-md-4 mb-3">
+            <h5>Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#empresa" class="text-white text-decoration-none">Empresa</a></li>
+              <li><a href="#produtos" class="text-white text-decoration-none">Produtos</a></li>
+              <li><a href="#servicos" class="text-white text-decoration-none">Serviços</a></li>
+              <li><a href="#contato" class="text-white text-decoration-none">Contato</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contato e redes sociais -->
+          <div class="col-md-4 mb-3">
+            <h5>Contato</h5>
+            <p>Email: contato@paletesmontealto.com.br<br>Telefone: (16) 241-1009 / 3241-1640</p>
+            <div class="d-flex gap-3 mt-2">
+              <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+    
+        </div>
+        <div class="text-center mt-3">
+          <small>&copy; 2025 Paletes Monte Alto LTDA. Todos os direitos reservados.</small>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
