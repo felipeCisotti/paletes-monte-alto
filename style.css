@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box; /*incluir no calculo da largura e altura -Margens, bordas, preenchimento(padding)*/
+    background-color: w;
 }
 
 body{
@@ -113,7 +114,6 @@ body{
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -139,7 +139,7 @@ body{
 }
 
 .menu a:hover{
-    background-color: #fffdfb;
+    background-color: blue;
 }
 
 
@@ -224,7 +224,7 @@ h3{
 
 
 form {
-    max-width: 1000px;
+    max-width: 500px;
     background-color: #162965;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -297,4 +297,18 @@ input[type="reset"]:hover {
     color: #e8e8f3;
     background-color: #050e2f;
     font-family: 'Poppins';
+}
+
+.carroussel{
+    padding: 20px;
+}
+
+ .img-card {
+    height: 550px;   /* você pode ajustar esse valor */
+    object-fit: cover; /* corta a imagem para preencher sem distorcer */
+    width: 100%;
+  }
+
+.loc{
+    border-radius: 20px;
 }
